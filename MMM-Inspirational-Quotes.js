@@ -7,7 +7,7 @@ Module.register("MMM-Inspirational-Quotes", {
 	},
 
 	start: function(){
-		this.quote_url = [];
+		this.quote_url = {};
 		this.sessionID = "";
 		this.dataurl = "http://www.inspirobot.me/api?generateFlow=1&sessionID="
 		this.size = this.config.size;
@@ -84,7 +84,7 @@ Module.register("MMM-Inspirational-Quotes", {
 		wrapper.className = "wrapper";
 		let quoteTextDiv = document.createElement("div");
 		quoteTextDiv.className = "normal";
-		quoteTextDiv.innerHTML = self.quote_url.text;
+		quoteTextDiv.innerHTML = self.quote_url.data.text;
 		wrapper.appendChild(quoteTextDiv);
 		/*if(self.quote_url.length > 0){
 			photo = document.createElement("img")
