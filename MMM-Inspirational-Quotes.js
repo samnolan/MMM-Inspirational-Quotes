@@ -3,7 +3,7 @@ Module.register("MMM-Inspirational-Quotes", {
 	defaults: {
 		"update_interval": 0,
 		"transition_interval": 2000,
-		"size": "500px"
+		//"size": "500px"
 	},
 
 	start: function(){
